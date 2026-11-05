@@ -295,22 +295,7 @@ export default function Home() {
               </span>
             </div>
 
-            {/* Stat 3 */}
-            <div className="flex flex-col items-center justify-center text-center">
-              <h3 className="text-4xl sm:text-6xl md:text-7xl font-black text-neutral-900 tracking-tight flex items-baseline justify-center">
-                <NumberTicker
-                  value={150}
-                  className="text-4xl sm:text-6xl md:text-7xl font-black text-neutral-900 dark:text-neutral-900"
-                />
-                <span className="text-emerald-500 ml-1">+</span>
-              </h3>
-              <p className="text-base sm:text-xl lg:text-2xl font-bold text-neutral-800 mt-2">
-                Colleges Represented
-              </p>
-              <span className="text-xs sm:text-sm text-neutral-500 font-medium mt-0.5">
-                Across Central India
-              </span>
-            </div>
+
           </div>
         </section>
       </div>
