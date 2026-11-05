@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Configure your theme variables here */
+  --font-sans: var(--font-geist-sans), "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-geist-mono), "Geist Mono", monospace;
+  --font-caveat: var(--font-caveat), "Caveat", cursive;
+  --font-display: var(--font-geist-sans), "Geist", sans-serif;
+  --color-primary-500: oklch(0.84 0.18 117.33);
+  --spacing: 0.25rem;
+}
+
+.font-caveat {
+  font-family: var(--font-caveat), "Caveat", cursive;
+}
+
+html, body {
+  font-family: var(--font-geist-sans), "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden !important;
+  max-width: 100vw;
+  width: 100%;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* Custom variants */
+@variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --animate-cell-ripple: cell-ripple var(--duration, 200ms) ease-out none 1 var(--delay, 0ms);
+
+  @keyframes cell-ripple {
+    0% {
+      opacity: 0.4;
+    }
+
+    50% {
+      opacity: 0.8;
+    }
+
+    100% {
+      opacity: 0.4;
+    }
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translate3d(0,0,0); }
+  50% { transform: translate3d(0,-20px,0); }
+}
+
+@keyframes float-reverse {
+  0%, 100% { transform: translate3d(0,0,0); }
+  50% { transform: translate3d(0,20px,0); }
+}
+
+/* Hide floating navbar when gallery modal is open */
+body.gallery-modal-open .floating-nav,
+body.gallery-modal-open [data-floating-nav],
+body.gallery-modal-open .fixed.top-4,
+body.gallery-modal-open .fixed.top-6 {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
+/* Mobile-friendly touch scrolling optimizations */
+@media (max-width: 768px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
