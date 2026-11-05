@@ -265,7 +265,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center text-center">
               <h3 className="text-4xl sm:text-6xl md:text-7xl font-black text-neutral-900 tracking-tight flex items-baseline justify-center">
                 <NumberTicker
-                  value={2000}
+                  value={128}
                   className="text-4xl sm:text-6xl md:text-7xl font-black text-neutral-900 dark:text-neutral-900"
                 />
                 <span className="text-amber-500 ml-1">+</span>
@@ -282,7 +282,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center text-center">
               <h3 className="text-4xl sm:text-6xl md:text-7xl font-black text-neutral-900 tracking-tight flex items-baseline justify-center">
                 <NumberTicker
-                  value={800}
+                  value={70}
                   className="text-4xl sm:text-6xl md:text-7xl font-black text-neutral-900 dark:text-neutral-900"
                 />
                 <span className="text-blue-500 ml-1">+</span>
