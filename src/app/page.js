@@ -29,6 +29,7 @@ import Link from "next/link";
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
 import PastEventsGalleryBox from "@/components/PastEventsGalleryBox";
 import VenueLocation from "@/components/VenueLocation";
+import EventLeads from "@/components/EventLeads";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -330,6 +331,11 @@ export default function Home() {
           TIMELINE & REGISTRATION SCHEDULE
           ======================================================== */}
       <CompetitionTimeline />
+
+      {/* ========================================================
+          EVENT LEADS (DIRECTORS / CONTACTS)
+          ======================================================== */}
+      <EventLeads />
 
       {/* ========================================================
           SPONSORS & PARTNERS (INFINITE MARQUEE WITH ZERO OVERFLOW)
