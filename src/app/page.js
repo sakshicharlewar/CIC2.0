@@ -141,18 +141,6 @@ export default function Home() {
           />
         </div>
 
-        {/* Event Key Highlights - Mobile & Desktop Badges */}
-        <div className="relative z-20 flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mt-3 sm:mt-5 max-w-lg px-2">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border-2 border-black bg-[#fef08a] text-neutral-900 font-extrabold text-[11px] sm:text-xs shadow-[2px_2px_0px_0px_#000]">
-            ⚡ 6-Hour CAD Contest
-          </span>
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border-2 border-black bg-white text-neutral-900 font-bold text-[11px] sm:text-xs shadow-[2px_2px_0px_0px_#000]">
-            📍 SCET Campus, Nagpur
-          </span>
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border-2 border-black bg-orange-100 text-orange-950 font-bold text-[11px] sm:text-xs shadow-[2px_2px_0px_0px_#000]">
-            🏆 ₹25,000+ Prize Pool
-          </span>
-        </div>
 
         {/* Soft bottom fade gradient */}
         <div className="absolute bottom-0 left-0 w-full h-24 sm:h-36 bg-linear-to-t from-white via-white/80 to-transparent pointer-events-none z-10" />
