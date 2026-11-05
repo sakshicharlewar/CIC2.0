@@ -19,9 +19,30 @@ const caveat = localFont({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://cic.scetngp.com"),
   title: "Central India Cadathon 2.0 | SCET Nagpur",
   description:
-    "Central India Cadathon 2.0 — Premier 6-Hour CAD Designing Competition at Suryodaya College of Engineering & Technology, Nagpur.",
+    "Central India Cadathon 2.0 — Premier CAD Designing Competition at Suryodaya College of Engineering & Technology, Nagpur.",
+  alternates: {
+    canonical: "https://cic.scetngp.com",
+  },
+  openGraph: {
+    title: "Central India Cadathon 2.0 | SCET Nagpur",
+    description:
+      "Central India Cadathon 2.0 — Premier CAD Designing Competition at Suryodaya College of Engineering & Technology, Nagpur.",
+    url: "https://cic.scetngp.com",
+    siteName: "Central India Cadathon 2.0",
+    images: [
+      {
+        url: "/images/cadathon_chapter2_hero.png",
+        width: 1200,
+        height: 630,
+        alt: "Central India Cadathon 2.0",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
   icons: {
     icon: "https://res.cloudinary.com/dkblrb4ow/image/upload/v1766264353/WhatsApp_Image_2025-11-21_at_11.13.24_AM_pdgsjt.jpg",
   },
